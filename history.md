@@ -51,7 +51,9 @@ kubectl get ns
 
 ```
 
-```bash1  kind create cluster --name=swap-clu --comfig=config.yml
+```bash
+Deployment.yml cmd
+1. kind create cluster --name=swap-clu --comfig=config.yml
     2  kind create cluster --name=swap-clu --config=config.yml
     3  cat config.yml 
     4  kubectl get nodes
@@ -98,4 +100,4 @@ kubectl get ns
    45  kubectl get pods
    46  kubectl get pods -n nginx
 ```
-Deployment.yml cmd
+
