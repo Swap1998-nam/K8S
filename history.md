@@ -48,6 +48,5 @@ kubectl get ns
    37  newgrp docker
    38  kubectl get pods
    39  kubectl get pod
-   40  histroy
-   41  history
+
 ```
