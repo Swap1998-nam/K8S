@@ -1,45 +1,53 @@
-ntu@ip-172-31-45-44:~/nginx$ history
-    1  sudo su
-    2  ls
-    3  vim namespeac.yml
-    4  ls
-    5  kubectl get ns
-    6  sudo user
-    7  kind create cluster --name swap-clu --config=config.yml
-    8  kind get clusters
-    9  kubectl get nodes
-   10  kind delet cluster -name swapnil-cluster
-   11  kind delete cluster -name swapnil-cluster
-   12  kind delete cluster swapnil-cluster
-   13  kind delete cluster --name swapnil-cluster
-   14  kind create cluster --name swap-clu --config=config.yml
-   15  kubectl get nodes
-   16  ls
-   17  kubectl apply -f namespeac.yml 
-   18  kubectl get ns
-   19  kubectl describe ns nginx
-   20  vim pod.yml
-   21  kubectl apply -f pod.yml 
-   22  vim pod.yml 
-   23  kubectl apply -f pod.yml 
-   24* vim pod.yml A
-   25  kubectl apply -f pod.yml 
-   26  kubectl get pod
-   27  kubectl get pods
-   28  kubectl get pods -n nginx
-   29  ls
-   30  mkdir nginx 
-   31  mv config.yml install.sh namespeac.yml pod.yml nginx/
-   32  ls
-   33  cd nginx/
-   34  ls
-   35  git init
-   36  echo "# K8S" >> README.md
-   37  git add .
-   38  git status
-   39  git commit "yml files added"
-   40  git commit -m "yml files added"
-   41  git branch -M main
-   42  git remote add origin https://github.com/Swap1998-nam/K8S.git
-   43  git push -u origin main
-   44  history
+# Kubernetes & Kind Command History
+
+This document records the complete command history and learning steps while
+working with **Kind (Kubernetes in Docker)**, namespaces, pods, and GitHub.
+
+---
+
+## Cluster & Namespace Checks
+
+```bash
+kubectl get ns
+1  kubectl get ns
+    2  config.yml
+    3  vim config.yml
+    4  kubectl create cluster --name swapnil-cluster --config=config.yml
+    5  kubectl create cluster --name=swapnil-cluster --config=config.yml
+    6  kind create cluster --name=swapnil-cluster --config=config.yml
+    7  kind cluster delete swapnil-cluster
+    8  kind delete cluster --name swapnil-cluster
+    9  kubectl get ns
+   10  vim config.yml 
+   11  kind create cluster --name=swapnil-cluster --config=config.yml
+   12  kubectl get ns
+   13  kubectl get nodes
+   14  kubectl get posds
+   15  kubectl get pods
+   16  kubectl run nginx --image=ngin
+   17  kubectl run nginx --image=nginx
+   18  kubectl delete pod nginx
+   19  kubectl run nginx --image=nginx
+   20  kubectl get pods
+   21  kubectl create ns nginxx
+   22  kubectl get ns
+   23  kubectl run nginx --image=nginx -n nginxx
+   24  kubectl get ns -n nginxx
+   25  kubectl get pod -n nginxx
+   26  kubectl get pods
+   27  kubectl delete pos nginx -n nginxx
+   28  kubectl delete pod nginx -n nginxx
+   29  kubectl get pods 
+   30  kubectl get pod -n nginxx
+   31  ls
+   32  git
+   33  vim install.sh
+   34  chmod +x install.sh 
+   35  ./install.sh 
+   36  sudo usermod -aG docker $USER
+   37  newgrp docker
+   38  kubectl get pods
+   39  kubectl get pod
+   40  histroy
+   41  history
+```
