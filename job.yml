@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: hello-world-job
+  namespace: nginx
+
+spec:
+  backoffLimit: 3
+  template:
+    spec:
+      restartPolicy: Never
+      containers:
+      - name: hello
+        image: busybox
+        command: ["sh", "-c", "echo Hello World"]
+
